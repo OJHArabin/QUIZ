@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import fr.epita.quiz.entity.Question;
+import fr.epita.quiz.entity.Register;
 
 
 	@Repository
@@ -44,9 +45,14 @@ import fr.epita.quiz.entity.Question;
 			NativeQuery<Question> query = session.createNativeQuery("select * from question order by rand() limit 5",Question.class);
 			List<Question> questions = query.list();
 			return questions;
-			
-			
-		}
+			}
+		
+		@Transactional
+		public void saveUser(Register r) {
+			Session session = sessionFactory.getCurrentSession();
+			session.save(r);
+			}
+
 
 		
 		

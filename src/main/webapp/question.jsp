@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Epita | Test</title>
+    <title>Epita | Add Question</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link href="resources1/css/bootstrap.css" rel="stylesheet">
+      <link href="resources/css/bootstrap.css" rel="stylesheet">
    
-    <link rel="stylesheet" type="text/css" href="resources1/css/test.css">  
+    <link rel="stylesheet" type="text/css" href="resources/css/test.css">
   </head>
   <body>
   	<div class="ctrlqFormContentWrapper col-xs-12 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2">
@@ -25,8 +25,8 @@
 
               <div class="row header">
                 <div class="input-field col s12 navbar-collapse" align="center">
-                  <h2 style="font-weight: bolder;">Test</h2>
-                  <!-- <p><center>Your Feedback Matters</center> </p> -->
+                  <h2 style="font-weight: bolder;">Add Question</h2>
+                  
                 </div>
               </div>
 
@@ -89,9 +89,9 @@
               <div class="row">
                 <div class="input-field col m6 s12">
                 <center>
-                  <button type="reset" value="reset" class="btn btn-large">Reset</button>
+                  <button type="reset" value="reset" class="btn btn-large" style="">Reset</button>
                 
-                  <button type="submit" class="btn submitBtn">Submit</button>
+                  <button type="submit" class="btn submitBtn" style="">Submit</button>
                   </center>
                 </div>
               </div>
@@ -109,6 +109,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    
-    <script src="resources1/js/bootstrap.js"></script>
+    
   </body>
 </html>

@@ -27,28 +27,13 @@ public class QuestionController
 		public ModelAndView saveQuestion(@ModelAttribute Question q)
 		{
 			System.out.println("hello iam here");
-//			ModelAndView mv = new ModelAndView("printQuestions.jsp");  
-			ModelAndView mv = new ModelAndView("getquest");  
+			ModelAndView mv = new ModelAndView("printQuestions.jsp");  
+			 
 			qDao.saveQuestion(q);
 			return mv;
 		}	
 		
-		//have to make printquestion.jsp
-		@RequestMapping("getquest")
-		@ResponseBody
-		public List<Question> getquest()
-		{
-			List<Question> questions = qDao.getQuestions();
-			
-			System.out.println(questions);
-			
-			return questions;
-		}
-		
-		
-		
-		
-		
+	
 		
 		
 		

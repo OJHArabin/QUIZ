@@ -8,12 +8,12 @@
 <meta charset="utf-8" />
 <title>EPITA- Test</title>
 <!-- CSS Files -->
-<link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="resources/plugin/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet"
-	href="plugin/font-awesome/css/font-awesome.min.css" />
-	<link rel="icon" href="fav.ico" type="image/gif">
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/animate.min.html" />
+	href="resources/plugin/font-awesome/css/font-awesome.min.css" />
+	
+<link rel="stylesheet" href="resources/css/style.css" />
+<link rel="stylesheet" href="resources/css/animate.min.html" />
 <!-- / CSS Files -->
 
 
@@ -133,9 +133,10 @@ response.setHeader("Expires", "0"); // Proxies.
 	
 	<br><br><br>
 	<div class="row">
-                   <center> <div class="col-md-12 text-center countdown-timer ct1">
+                    <div class="col-md-12 text-center countdown-timer ct1">
                         <h1>Exam Starts in <span id="startCount">2</span>!</h1>
                     </div>
+                    
 	<section id="about">
 		<div class="container">
 			<div class="row text-center">
@@ -187,32 +188,32 @@ response.setHeader("Expires", "0"); // Proxies.
 
 
 			<div class="row">
-				<center>
+				
 				<p><input type="submit" class="btn btn-theme btn-green" id="prev" value="Prev" />
                  <input type="submit" class="btn btn-theme btn-green" id="next" value="Next"/>
            	
 						 <input type="submit" class="btn btn-theme btn-orange" id="#end" value="End Test" onclick="go()"/></p>
-			</center>
+			
 			</div>
 
 
 
 
 		</div>
-</div>
+   </div>
 	</section>
-
+</div>
  
 	<!-- JavaScript Files -->
-	<script src="plugin/jquery-1.10.2.min.js"></script>
-	<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
-	<script src="plugin/jquery.cuteTime.min.js"></script>
-	<script src="script/script.js"></script>
+	<script src="resources/plugin/jquery-1.10.2.min.js"></script>
+	<script src="resources/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="resources/plugin/jquery.cuteTime.min.js"></script>
+	
 	<!-- / JavaScript Files -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="js/custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="resources/js/custom.js"></script>
 	<!-- Counter  -->
-	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-	<script src="js/countUp.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.counterup.min.js"></script>
+	<script src="resources/js/countUp.min.js"></script>
 	 <script type="text/javascript">
         var options = {
             useEasing : false,
@@ -222,7 +223,7 @@ response.setHeader("Expires", "0"); // Proxies.
             prefix : '',
             suffix : ''
         };
-        var startCount = new CountUp("startCount", 1, 0, 0, 1, options);
+        var startCount = new CountUp("startCount", 3, 0, 0, 3, options);
         startCount.start(hideCounterShowTimer);
         function hideCounterShowTimer() {
             $('.ct1').addClass('hidden');
